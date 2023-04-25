@@ -13,7 +13,7 @@ body {
 }
 
 button {
-  margin-top: -30px;
+  margin: auto;
   position: relative;
   overflow: hidden;
   -webkit-transition: background 400ms;
@@ -48,3 +48,19 @@ button {
   transition: background 0s;
 }
 /*# sourceMappingURL=index.css.map */
+.parent {
+  position: relative;
+  margin: auto;
+}
+
+.image1 {
+  position: relative;
+  margin: auto;
+  width: 60%;
+}
+
+.image2 {
+  margin-top: 450px;
+  position: absolute;
+  width: 60%;
+}
