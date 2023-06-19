@@ -54,13 +54,15 @@ button {
 }
 
 .image1 {
-  position: relative;
   margin: auto;
   width: 60%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .image2 {
-  margin-top: 450px;
-  position: absolute;
-  width: 60%;
+  width: 100%;
+  height: auto;
 }
