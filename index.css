@@ -1,23 +1,71 @@
-.parent {
-  position: relative;
-  margin: auto;
+body {
+   background-color: #F1F0F0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+  padding:5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 .image1 {
   margin: auto;
-  width: 60%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 80%;
 }
 
 .image2 {
-  width: 100%;
-  height: auto;
+  width: 80%;
 }
 
-.tg  {border-collapse:collapse;border-spacing:0; z-index:1; position: relative;}
-.tg td{border-spacing:0; padding:0}
-.tg th{border-spacing:0; padding:0}
-.tg .tg-0lax{border-spacing:2px; padding:5px; padding-top: 270px;}
+.menu{
+  position:relative;
+  z-index:1;
+  top:-120px;
+  padding-left: 42%;
+  width:90%;
+}
+
+.back {
+  position:relative;
+  margin: auto;
+  padding-left:10%;
+}
+
+.col-1 {width: 30%;}
+.col-2 {width: 30%;}
+.col-3 {width: 28%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 90%;
+	position:relative;
+	padding:0px;
+  }
+  [class*="col-1"] {
+	padding-top:40px;
+  }
+  [class*="col-2"] {
+	padding-top:40px;
+  }
+  [class*="col-3"] {
+	padding-top:40px;
+  }
+  [class*="back"] {
+	width: 100%;
+  }
+  [class*="menu"] {
+	padding-left:15%;
+	top:0px;
+	width:100%;
+  }
+}
