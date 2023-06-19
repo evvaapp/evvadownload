@@ -70,7 +70,8 @@ body {
 	padding-top:40px;
   }
   [class*="back"] {
-	width: 100%;
+	width: 120%;
+	padding-left:0px;
   }
   [class*="menu"] {
 	padding-left:15%;
